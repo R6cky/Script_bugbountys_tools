@@ -51,33 +51,83 @@ echo "---------------------------------------------------"
 echo "Amass instalado."
 echo "---------------------------------------------------"
 sleep 2
-echo "Instalação do Haktrais"
+echo "Instalação do Haktrais - Aguarde..."
 echo "---------------------------------------------------"
+go install -v github.com/hakluke/haktrails@latest
+echo "---------------------------------------------------"
+echo "Movendo arquivo para /usr/bin..."
+mv /root/go/bin/haktrails /usr/bin/
+echo "---------------------------------------------------"
+sleep 2
+echo "---------------------------------------------------"
+sleep 2
 echo "---------------------------------------------------"
 echo "Instalação de ferramentas de validação de links HTTP E HTTPS"
 echo "---------------------------------------------------"
 sleep 2
-echo "Instalação do HTTPX"
+echo "Instalação do HTTPX..."
+go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 echo "---------------------------------------------------"
-echo "Instalação do HTTPROBE"
+sleep 2
+echo "Movendo arquivo para /usr/bin..."
+mv /root/go/bin/httpx /usr/bin/
+echo "---------------------------------------------------"
+echo "Instalação do HTTPROBE..."
+echo "---------------------------------------------------"
+go install github.com/tomnomnom/httprobe@latest
+sleep 2
+echo "---------------------------------------------------"
+echo "Movendo arquivo para /usr/bin..."
+mv /root/go/bin/httprobe /usr/bin/
+sleep 2
 echo "---------------------------------------------------"
 echo "---------------------------------------------------"
 echo "---------------------------------------------------"
 echo "---------------------------------------------------"
 echo "Instalação de Ferramentas WebCrawlers"
 echo "---------------------------------------------------"
+echo "---------------------------------------------------"
+echo "---------------------------------------------------"
+echo "---------------------------------------------------"
 sleep 2
 echo "Instalando WaybackUrls"
 echo "---------------------------------------------------"
+go install github.com/tomnomnom/waybackurls@latest
+echo "---------------------------------------------------"
+sleep 2
+echo "Movendo arquivo para /usr/bin..."
+ mv /root/go/bin/waybackurls /usr/bin/
+echo "---------------------------------------------------"
 echo "Instalando GAU"
 echo "---------------------------------------------------"
-echo "Instalando GauPlus"
+go install github.com/lc/gau/v2/cmd/gau@latest
+echo "---------------------------------------------------"
+sleep 2
+echo "Movendo arquivo para /usr/bin..."
+mv /root/go/bin/gau /usr/bin/
+"---------------------------------------------------"
+sleep 2
+echo "Instalando GauPlus..."
+echo "---------------------------------------------------"
+go install github.com/bp0lr/gauplus@latest
+echo "---------------------------------------------------"
+sleep 2
+echo "---------------------------------------------------"
+echo "Movendo arquivo para /usr/bin..."
+echo "---------------------------------------------------"
+mv /root/go/bin/gauplus /usr/bin/
+sleep 2
 echo "---------------------------------------------------"
 echo "---------------------------------------------------"
 echo "---------------------------------------------------"
 echo "---------------------------------------------------"
 echo "---------------------------------------------------"
 echo "Instalação de ferramentas de enumeraçãpo de ENDPOINTS"
+echo "---------------------------------------------------"
+echo "---------------------------------------------------"
+echo "---------------------------------------------------"
+echo "---------------------------------------------------"
+echo "---------------------------------------------------"
 echo "---------------------------------------------------"
 sleep 2
 echo "Instalando "
